@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    margin: 20px;
+    border-top: 3px solid black;
+}
+body {
+    background-color: rgb(196, 219, 219);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background:linear-gradient(orange,white,green);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .flag {
+    height: 60px;
+    width: 80px;
+    background-image: url(india-flag.jpg);
+    background-size: cover;
+} */
+.main-heading {
+    font-size: 30px;
+    text-shadow:2px 2px rgb(255, 251, 251);
+}
+.description {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description-info, .fomous-for{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    width: fit-content;
+    font-size: 25px;
+    text-align:justify;
+}
+
+ul {
+    padding: 40px;
+    /* background-color: aqua; */
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li {
+    padding: 10px;;
+}
+.card-animation {
+    padding: 40px;
+    width:fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    perspective: 500px;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: transform 1500ms;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: none;
+    transform-style: preserve-3d;
+}
+.front,.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    backface-visibility: hidden;
+}
+#tajmahal{
+    background-image: url(tajmahal.jpg);
+    background-size: cover;
+}
+#golden-temple {
+    background-image: url(golden-temple.jpg);
+    background-size: cover;
+}
+#red-fort {
+    background-image: url(red-fort.jpg);
+    background-size: cover;
+}
+#gateway-of-india {
+    background-image: url(gateway-of-india.jpg);
+    background-size: cover;
+}
+#hava-mahal {
+    background-image: url(hava-mahal.jpg);
+    background-size: cover;
+}
+#juma-masjid {
+    background-image: url(jama-masjid.jpg);
+    background-size: cover;
+}
+#kerala-backwaters {
+    background-image: url(kerala-backwaters.jpg);
+    background-size: cover;
+}
+#qutb-minar {
+    background-image: url(qutub-minar.jpg);
+    background-size: cover;
+}
+/* ----------------------------------------- */
+#masala {
+    background-image: url(masala.jpg);
+    background-size: cover;
+}
+#biryani {
+    background-image: url(biryani.jpg);
+    background-size: cover;
+}
+#dosa {
+    background-image: url(dosa.jpg);
+    background-size: cover;
+}
+#curry{
+    background-image: url(curry.jpg);
+    background-size: cover;
+}
+#tandoori{
+    background-image: url(tandoori.jpg);
+    background-size: cover;
+}
+#gulab-jamun{
+    background-image: url(gulab\ jamun.jpg);
+    background-size: cover;
+}
+#samosa{
+    background-image: url(samosa.jpg);
+    background-size: cover;
+}
+#pav-bhaji {
+    background-image: url(pav\ bhaji.jpg);
+    background-size: cover;
+}
+/* ------------------------------------------- */
+#mumbai {
+    background-image: url(mumbai.jpg);
+    background-size: cover;
+}
+#new-delhi {
+    background-image: url(new-delhi.jpg);
+    background-size: cover;
+}
+#kolkata {
+    background-image: url(kolkata.jpg);
+    background-size: cover;
+}
+#goa {
+    background-image: url(goa.jpg);
+    background-size: cover;
+}
+#bangalore {
+    background-image: url(bangalore.jpg);
+    background-size: cover;
+}
+#agra {
+    background-image: url(agra.jpg);
+    background-size: cover;
+}
+#kochi {
+    background-image: url(kochi.jpg);
+    background-size: cover;
+}
+#mysore {
+    background-image: url(mysore.jpg);
+    background-size: cover;
+}
+/* ------------------------------------  */
+#Nag-Panchami {
+    background-image: url(nag-panchami.jpg);
+    background-size: cover;
+}
+#Yoga {
+    background-image: url(yoga.jpg);
+    background-size: cover;
+}
+#Vedic-Chanting {
+    background-image: url(Vedic-Chant.jpg);
+    background-size: cover;
+}
+#Kumbh-Mela {
+    background-image: url(kumbha-mela.jpg);
+    background-size: cover;
+}
+#Diwali {
+    background-image: url(diwali.jpg);
+    background-size: cover;
+}
+#Hola-Mohalla {
+    background-image: url(Hola-Mohalla.jpg);
+    background-size: cover;
+}
+#Traditional-Clothing {
+    background-image: url(traditional-cloth.jpg);
+    background-size: cover;
+}
+#Hinduism {
+    background-image: url(Hinduism.jpg);
+    background-size: cover;
+}
+.back {
+    /* background: linear-gradient(rgb(248, 79, 0),rgb(76, 171, 109),rgb(119, 208, 222)); */
+    background: linear-gradient(rgb(8, 141, 164),rgb(195, 236, 244));
+    transform: rotateY(180deg);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h1, p {
+    margin: 5px;
+    padding: 5px;
+}
+.button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 5px 5px 0px black;
+}
+footer {
+    padding: 20px;
+    padding-top: 10px;
+    height: 300px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#my-img {
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 80px;
+    width: 80px;
+}
+#personal-info {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.profile-logo {
+    height: 100px;
+}
+.logos {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+}
+.logos:hover {
+    box-shadow: 2px 2px 3px 5px white;
+}
+.footer-copyright {
+    height: 50px;
+    text-align: center;
+}
